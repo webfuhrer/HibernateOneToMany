@@ -1,3 +1,4 @@
+package xmlaemet;
 
 public class Dia {
 private String fecha;

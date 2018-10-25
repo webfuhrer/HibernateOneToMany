@@ -1,3 +1,4 @@
+package xmlaemet;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -12,7 +13,7 @@ public class ClasePrincipal {
 
 	public static void main(String[] args) {
 		Clima c=AccesoFichero.parsearXML();
-		
+		EntradaSalida.mostrarPrediccion(c);
 	}
 
 }
