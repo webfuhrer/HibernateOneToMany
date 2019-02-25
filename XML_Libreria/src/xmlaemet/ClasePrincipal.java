@@ -9,6 +9,9 @@ import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 
+import AccesoFichero;
+import Clima;
+
 public class ClasePrincipal {
 
 	public static void main(String[] args) {

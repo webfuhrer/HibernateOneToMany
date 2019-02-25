@@ -1,5 +1,8 @@
 package xmlaemet;
 
+import Clima;
+import Dia;
+
 public class EntradaSalida {
 
 	public static void mostrarPrediccion(Clima c) {

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibernateonetomany">
+
+    <class name="MarcaCoche" >
+        <id name="id">
+            <generator class="native"/>
+        </id>
+        <property name="nombre"  type="string"/>
+        <property name="pais_origen"  type="string"/>
+          <list name = "modelos" cascade="all">
+         		<key column = "modelo_id"/><!-- esta columna la crea el para relacionarla com modelos, puede llamarse como quieras-->
+         <list-index column = "idx"/><!-- esta columna la usa él para "contar" los modelos de una marca -->
+         <one-to-many class="ModeloCoche"/>
+      </list>
+      
+    
+    </class>
+
+</hibernate-mapping>
+    
